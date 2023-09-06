@@ -1,9 +1,111 @@
+#mp1 {
+    border-top: 3px solid red;
+    border-bottom: 5px solid red;
+}
 
-h1 {
+#mp1 main {
+    background-color: violet;
+}
+
+#mp1 aside {
+    background-color: green;
+}
+#mp1 > footer {
+    background-color: orange;
+}
+
+/* poner borde a l pie de los articulos */
+
+#mp1 article > footer {
+    border: 5px double gray;
+}
+
+/* hermano general */
+
+#mp1 h2 ~ article {
+    box-shadow: 5px 5px 5px palevioletred;
+}
+
+/* hermano adyacente */
+#mp1 h2 + article, #mp1 nav [href="#"] {
+    border-top:  5px double blue;
+}
+
+
+
+
+
+/* [type="text"] {
+    color: blue;
+}
+
+
+[href*="you"] {
+    color: red;
+}
+
+[href$= "mx"] {
+    color: green;
+}
+
+[href ^= "https"] {
+    font-size: 25px;
+}
+
+[href="#"] {
+    background-color: lime;
+}
+ */
+
+/* buscar por atributo sin importar valor */
+/* 
+[href] {
+    border-bottom: 5px solid blue;
+}
+
+[lang] {
+    color: aqua;
+}
+
+
+h1.verde {
+    font-size: 50px;
+}
+
+/* selector por clase */
+/* 
+.rojo {
+    background-color: red;
+    border: 5px groove tomato;
+    border-radius: 5px;
+}
+
+.verde {
+    background-color: green;
+    border: 5px inset greenyellow;
+    border-radius: 5px;
+} */
+
+/* selector por id */
+
+/* #link1 {
+    font-size: 20px;
+}
+
+#link6 {
+    background-color: red;
+} */ 
+
+
+/* h1 {
     border: 10px dotted gold;
     border-radius: 50px;
     background-color: lime;
     text-align: center;
     box-shadow: 5px 5px gray;
     font-size: 500px;
-}
+} */
+
+/* * {
+    border: 1px dashed blue;
+} */
